@@ -1,0 +1,43 @@
+.topbar {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px;
+  background: white;
+}
+
+.topbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.refresh-dashboard-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.refresh-dashboard-btn:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.refresh-dashboard-btn svg {
+  width: 16px;
+  height: 16px;
+}

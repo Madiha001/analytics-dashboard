@@ -1,0 +1,159 @@
+.queries-source-card {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.queries-source-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.queries-source-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.queries-source-refresh {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.queries-source-refresh:hover:not(:disabled) {
+  color: #6b7280;
+}
+
+.queries-source-refresh:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.queries-source-refresh svg.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.queries-source-loading,
+.queries-source-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.queries-source-error {
+  color: #ef4444;
+  font-size: 13px;
+}
+
+.queries-source-labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 12px 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 12px;
+}
+
+.queries-source-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.queries-source-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.queries-source-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 160px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.source-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  background: rgba(248, 248, 249, 1);
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.source-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.queries-source-bar-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.queries-source-bar-track {
+  width: 226px;
+  height: 4px;
+  background: rgba(233, 233, 234, 1);
+  border-radius: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.queries-source-bar {
+  height: 100%;
+  border-radius: 24px;
+  transition: width 0.3s ease;
+}
+
+.queries-source-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  min-width: 48px;
+  text-align: right;
+}
+
+.spinner-small {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
